@@ -13,6 +13,11 @@ const fs = require('fs');
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
 
+/*// @TODO: 
+helpers.sendTwillioSMS('351913510668', 'Ola', (err) => {
+    console.log('This was the error: ', err);
+});*/
+
 // Instantiating http server
 var httpServer = http.createServer((req, res) => {
     unifiedServer(req, res);
